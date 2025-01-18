@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Baloo';
+    src: url('../assets/fonts/Baloo2-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 16px;
+    z-index: 1;
+    width: 100%;
+}
+
+.header>header {
+    width: 100%;
+    background-color: #00529e;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-close-container {
+    display: flex;
+    align-items: start;
+    margin-left: auto;
+}
+
+.header-close-button {
+    background: white;
+    border: none;
+    cursor: pointer
+}
+
+.header-close-button span {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #616e7e;
+}
+
+.logo {
+    margin-left: 2rem;
+}
+
+.logo,
+.exercise-badge {
+    background-color: #00529e;
+    border: 10px solid #00529e;
+    display: inline-block;
+    border-radius: 8px;
+    z-index: 2;
+    border-top: 20px solid #00529e;
+    transform: translateY(-10px);
+}
+
+.exercise-badge {
+    background-color: #a6dcd3;
+    border-color: #a6dcd3;
+    display: flex;
+    align-items: end;
+}
+
+.logo>img {
+    height: 73px;
+}
+
+.badge-title {
+    text-decoration: none;
+    color: #00529e;
+    font-weight: 800;
+    justify-content: end;
+    font-family: 'Baloo', sans-serif;
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+    z-index: 1;
+}
+
+.subtitle h2 {
+    z-index: 100;
+    color: #83cbeb;
+    /*
+    color: #3c8b77; */
+}

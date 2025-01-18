@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuvolario</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="styles/header.css" type="text/css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <script src="js/swapy.min.js"></script>
+</head>
+
+<body class="no-scroll">
+
+    <!-- Start Overlay -->
+    <div data-overlay class="overlay">
+        <div class="start-container">
+            <h1 id="start-phrase">SEI PRONTO A CREARE <br> IL TUO NUVOLARIO PERSONALIZZATO?</h1>
+            <button type="button" id="start-button">
+                Inizia
+            </button>
+            <img class="start-image" src="assets/images/nuvola_edited.svg" alt="Nuvola" oncontextmenu="return false;">
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="subtitle">
+            <h2>CREA IL TUO NUVOLARIO PERSONALIZZATO</h2>
+
+            <!-- Screen 1 -->
+            <h2 class="subtitle-screen1 no-margin">Scegli 2 cibi che mangeresti tutti i giorni: </h2>
+
+            <!-- Screen 2 -->
+            <h2 class="subtitle-screen2 no-margin" style="display: none;">Scegli 2 cose che ti appassionano, uno sport o
+                un’attività
+                che non ti annoieranno mai: </h2>
+
+            <!-- Screen 3 -->
+            <h2 class="subtitle-screen3 no-margin" style="display: none;">Scegli 2 posti che sogni di visitare almeno
+                una
+                volta nella
+                vita: </h2>
+
+            <!-- Screen 4 -->
+            <h2 class="subtitle-screen4 no-margin" style="display: none;">Scegli 2 cose che ti piacerebbe fare almeno
+                una
+                volta nella
+                vita: </h2>
+
+            <!-- Screen 5 - End -->
+            <h2 class="subtitle-screen5 no-margin" style="display: none;">Fine!</h2>
+        </div>
+
+        <div class="main-container">
+            <div class="cloud-container">
+                <img src="assets/images/nuvola_edited.svg" alt="Nuvola" id="cloud-image">
+
+                <!-- Container per le parole passate dai draggable -->
+                <div class="word-div word" style="top: 26%; left: 27%;"></div>
+                <div class="word-div word" style="top: 67%; left: 29%;"></div>
+                <div class="word-div word" style="top: 60.5%; left: 16%;"></div>
+                <div class="word-div word" style="top: 33%; left: 39%;"></div>
+                <div class="word-div word" style="top: 44%; left: 47%;"></div>
+                <div class="word-div word" style="top: 44%; left: 9%;"></div>
+                <div class="word-div word" style="top: 38%; left: 14%; overflow-wrap: normal;"></div>
+                <div class="word-div word" style="top: 50%; left: 25%; overflow-wrap: normal; max-width: min-content;">
+                </div>
+
+                <!-- Dropzones dinamiche -->
+                <div class="dropzone" style="top: 24%; left: 31%;" data-swapy-slot="screen-1-drop-1" data-dropzone>
+                </div>
+                <div class="dropzone" style="top: 64.5%; left: 32%;" data-swapy-slot="screen-1-drop-2" data-dropzone>
+                </div>
+                <div class="dropzone" style="display: none; top: 58%; left: 20%;" data-swapy-slot="screen-2-drop-1"
+                    data-dropzone></div>
+                <div class="dropzone" style="display: none; top: 30.5%; left: 39.5%;" data-swapy-slot="screen-2-drop-2"
+                    data-dropzone></div>
+                <div class="dropzone" style="display: none; top: 41.5%; left: 51%;" data-swapy-slot="screen-3-drop-1"
+                    data-dropzone></div>
+                <div class="dropzone" style="display: none; top: 41.5%; left: 12.5%;" data-swapy-slot="screen-3-drop-2"
+                    data-dropzone></div>
+                <div class="dropzone" style="display: none; top: 35.5%; left: 17.5%;" data-swapy-slot="screen-4-drop-1"
+                    data-dropzone></div>
+                <div class="dropzone" style="display: none; top: 50%; left: 22.5%;" data-swapy-slot="screen-4-drop-2"
+                    data-dropzone></div>
+            </div>
+
+            <!-- Schermata 1 -->
+            <div id="screen1" class="screen">
+                <div class="draggable-container" id="draggable-container-1">
+                    <div data-swapy-slot="screen-1-drag-1" data-value="Formaggio">
+                        <div class="draggable" data-swapy-item="screen-1-drag-1">Formaggio</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-2" data-value="Anatra">
+                        <div class="draggable" data-swapy-item="screen-1-drag-2">Anatra</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-3" data-value="Torte">
+                        <div class="draggable" data-swapy-item="screen-1-drag-3">Torte</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-4" data-value="Broccoli">
+                        <div class="draggable" data-swapy-item="screen-1-drag-4">Broccoli</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-5" data-value="Tortellini">
+                        <div class="draggable" data-swapy-item="screen-1-drag-5">Tortellini</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-6" data-value="Tagliatelle">
+                        <div class="draggable" data-swapy-item="screen-1-drag-6">Tagliatelle</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-7" data-value="Kebab">
+                        <div class="draggable" data-swapy-item="screen-1-drag-7">Kebab</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-8" data-value="Crema">
+                        <div class="draggable" data-swapy-item="screen-1-drag-8">Crema</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-9" data-value="Pizza">
+                        <div class="draggable" data-swapy-item="screen-1-drag-9">Pizza</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-10" data-value="Zucchine">
+                        <div class="draggable" data-swapy-item="screen-1-drag-10">Zucchine</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-11" data-value="Popcorn">
+                        <div class="draggable" data-swapy-item="screen-1-drag-11">Popcorn</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-12" data-value="Noodles">
+                        <div class="draggable" data-swapy-item="screen-1-drag-12">Noodles</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-13" data-value="Biscotti">
+                        <div class="draggable" data-swapy-item="screen-1-drag-13">Biscotti</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-14" data-value="Byrek">
+                        <div class="draggable" data-swapy-item="screen-1-drag-14">Byrek</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-15" data-value="Yogurt">
+                        <div class="draggable" data-swapy-item="screen-1-drag-15">Yogurt</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-16" data-value="Cotoletta">
+                        <div class="draggable" data-swapy-item="screen-1-drag-16">Cotoletta</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-17" data-value="Risotto">
+                        <div class="draggable" data-swapy-item="screen-1-drag-17">Risotto</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-18" data-value="Lasagne">
+                        <div class="draggable" data-swapy-item="screen-1-drag-18">Lasagne</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-19" data-value="Ravioli">
+                        <div class="draggable" data-swapy-item="screen-1-drag-19">Ravioli</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-20" data-value="Spinaci">
+                        <div class="draggable" data-swapy-item="screen-1-drag-20">Spinaci</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-21" data-value="Tajine">
+                        <div class="draggable" data-swapy-item="screen-1-drag-21">Tajine</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-22" data-value="Crostate">
+                        <div class="draggable" data-swapy-item="screen-1-drag-22">Crostate</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-23" data-value="Fragola">
+                        <div class="draggable" data-swapy-item="screen-1-drag-23">Fragola</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-24" data-value="Mela">
+                        <div class="draggable" data-swapy-item="screen-1-drag-24">Mela</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-25" data-value="Pollo">
+                        <div class="draggable" data-swapy-item="screen-1-drag-25">Pollo</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-26" data-value="Fergese">
+                        <div class="draggable" data-swapy-item="screen-1-drag-26">Fergese</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-27" data-value="Naan">
+                        <div class="draggable" data-swapy-item="screen-1-drag-27">Naan</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-28" data-value="Baklava">
+                        <div class="draggable" data-swapy-item="screen-1-drag-28">Baklava</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-29" data-value="Gelato">
+                        <div class="draggable" data-swapy-item="screen-1-drag-29">Gelato</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-30" data-value="Patate fritte">
+                        <div class="draggable" data-swapy-item="screen-1-drag-30">Patate fritte</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-31" data-value="Falafel">
+                        <div class="draggable" data-swapy-item="screen-1-drag-31">Falafel</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-32" data-value="Castagne">
+                        <div class="draggable" data-swapy-item="screen-1-drag-32">Castagne</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-33" data-value="Borscht">
+                        <div class="draggable" data-swapy-item="screen-1-drag-33">Borscht</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-34" data-value="Hamburger">
+                        <div class="draggable" data-swapy-item="screen-1-drag-34">Hamburger</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-35" data-value="Ciliegia">
+                        <div class="draggable" data-swapy-item="screen-1-drag-35">Ciliegia</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-36" data-value="Couscous">
+                        <div class="draggable" data-swapy-item="screen-1-drag-36">Couscous</div>
+                    </div>
+                    <div data-swapy-slot="screen- 1-drag-37" data-value="Involtini">
+                        <div class="draggable" data-swapy-item="screen-1-drag-37">Involtini</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-38" data-value="Frittura di pesce">
+                        <div class="draggable" data-swapy-item="screen-1-drag-38">Frittura di pesce</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-39" data-value="Peperoni">
+                        <div class="draggable" data-swapy-item="screen-1-drag-39">Peperoni</div>
+                    </div>
+                    <div data-swapy-slot="screen-1-drag-40" data-value="Samosa">
+                        <div class="draggable" data-swapy-item="screen-1-drag-40">Samosa</div>
+                    </div>
+                </div>
+                <button type="button" class="next-button" data-screen="1">Avanti</button>
+            </div>
+
+            <!-- Schermata 2 -->
+            <div id="screen2" class="screen" style="display:none;">
+                <div class="draggable-container" id="draggable-container-2">
+                    <div data-swapy-slot="screen-2-drag-1" data-value="Cucinare">
+                        <div class="draggable" data-swapy-item="screen-2-drag-1">Cucinare</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-2" data-value="Cricket">
+                        <div class="draggable" data-swapy-item="screen-2-drag-2">Cricket</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-3" data-value="Leggere">
+                        <div class="draggable" data-swapy-item="screen-2-drag-3">Leggere</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-4" data-value="Giocare">
+                        <div class="draggable" data-swapy-item="screen-2-drag-4">Giocare</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-5" data-value="Cinema">
+                        <div class="draggable" data-swapy-item="screen-2-drag-5">Cinema</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-6" data-value="Colorare">
+                        <div class="draggable" data-swapy-item="screen-2-drag-6">Colorare</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-7" data-value="Studiare">
+                        <div class="draggable" data-swapy-item="screen-2-drag-7">Studiare</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-8" data-value="Cani">
+                        <div class="draggable" data-swapy-item="screen-2-drag-8">Cani</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-9" data-value="Corsa">
+                        <div class="draggable" data-swapy-item="screen-2-drag-9">Corsa</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-10" data-value="Animali">
+                        <div class="draggable" data-swapy-item="screen-2-drag-10">Animali</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-11" data-value="Hip-hop">
+                        <div class="draggable" data-swapy-item="screen-2-drag-11">Hip-hop</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-12" data-value="Basket">
+                        <div class="draggable" data-swapy-item="screen-2-drag-12">Basket</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-13" data-value="Nuotare">
+                        <div class="draggable" data-swapy-item="screen-2-drag-13">Nuotare</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-14" data-value="Ricamare">
+                        <div class="draggable" data-swapy-item="screen-2-drag-14">Ricamare</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-15" data-value="Suonare uno strumento">
+                        <div class="draggable" data-swapy-item="screen-2-drag-15">Suonare uno strumento</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-16" data-value="Tennis">
+                        <div class="draggable" data-swapy-item="screen-2-drag-16">Tennis</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-17" data-value="Disegnare">
+                        <div class="draggable" data-swapy-item="screen-2-drag-17">Disegnare</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-18" data-value="Baseball">
+                        <div class="draggable" data-swapy-item="screen-2-drag-18">Baseball</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-19" data-value="Ginnastica artistica">
+                        <div class="draggable" data-swapy-item="screen-2-drag-19">Ginnastica artistica</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-20" data-value="Pallavolo">
+                        <div class="draggable" data-swapy-item="screen-2-drag-20">Pallavolo</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-21" data-value="Musica">
+                        <div class="draggable" data-swapy-item="screen-2-drag-21">Musica</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-22" data-value="Videogiochi">
+                        <div class="draggable" data-swapy-item="screen-2-drag-22">Videogiochi</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-23" data-value="Scrivere">
+                        <div class="draggable" data-swapy-item="screen-2-drag-23">Scrivere</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-24" data-value="Calcio">
+                        <div class="draggable" data-swapy-item="screen-2-drag-24">Calcio</div>
+                    </div>
+                    <div data-swapy-slot="screen-2-drag-25" data-value="Ballare">
+                        <div class="draggable" data-swapy-item="screen-2-drag-25">Ballare</div>
+                    </div>
+                </div>
+                <button type="button" class="next-button" data-screen="2">Avanti</button>
+            </div>
+
+            <!-- Schermata 3 -->
+            <div id="screen3" class="screen" style="display:none;">
+                <div class="draggable-container" id="draggable-container-3">
+                    <div data-swapy-slot="screen-3-drag-1" data-value="Lago">
+                        <div class="draggable" data-swapy-item="screen-3-drag-1">Lago</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-2" data-value="Vulcano">
+                        <div class="draggable" data-swapy-item="screen-3-drag-2">Vulcano</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-3" data-value="Cascate">
+                        <div class="draggable" data-swapy-item="screen-3-drag-3">Cascate</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-4" data-value="Deserto">
+                        <div class="draggable" data-swapy-item="screen-3-drag-4">Deserto</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-5" data-value="Montagne">
+                        <div class="draggable" data-swapy-item="screen-3-drag-5">Montagne</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-6" data-value="Città">
+                        <div class="draggable" data-swapy-item="screen-3-drag-6">Città</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-7" data-value="Spiaggia">
+                        <div class="draggable" data-swapy-item="screen-3-drag-7">Spiaggia</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-8" data-value="Foresta">
+                        <div class="draggable" data-swapy-item="screen-3-drag-8">Foresta</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-9" data-value="Isola">
+                        <div class="draggable" data-swapy-item="screen-3-drag-9">Isola</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-10" data-value="Campi">
+                        <div class="draggable" data-swapy-item="screen-3-drag-10">Campi</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-11" data-value="Ghiacciai">
+                        <div class="draggable" data-swapy-item="screen-3-drag-11">Ghiacciai</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-12" data-value="Canyon">
+                        <div class="draggable" data-swapy-item="screen-3-drag-12">Canyon</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-13" data-value="Savana">
+                        <div class="draggable" data-swapy-item="screen-3-drag-13">Savana</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-14" data-value="Grotta">
+                        <div class="draggable" data-swapy-item="screen-3-drag-14">Grotta</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-15" data-value="Fiume">
+                        <div class="draggable" data-swapy-item="screen-3-drag-15">Fiume</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-16" data-value="Laguna">
+                        <div class="draggable" data-swapy-item="screen-3-drag-16">Laguna</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-17" data-value="Palude">
+                        <div class="draggable" data-swapy-item="screen-3-drag-17">Palude</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-18" data-value="Tundra">
+                        <div class="draggable" data-swapy-item="screen-3-drag-18">Tundra</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-19" data-value="Prateria">
+                        <div class="draggable" data-swapy-item="screen-3-drag-19">Prateria</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-20" data-value="Rocce">
+                        <div class="draggable" data-swapy-item="screen-3-drag-20">Rocce</div>
+                    </div>
+                    <div data-swapy-slot="screen-3-drag-21" data-value="Pianura">
+                        <div class="draggable" data-swapy-item="screen-3-drag-21">Pianura</div>
+                    </div>
+                </div>
+                <button type="button" class="next-button" data-screen="3">Avanti</button>
+            </div>
+
+            <!-- Schermata 4 -->
+            <div id="screen4" class="screen" style="display:none;">
+                <div class="draggable-container" id="draggable-container-4">
+                    <div data-swapy-slot="screen-4-drag-1" data-value="Fisioterapista">
+                        <div class="draggable" data-swapy-item="screen-4-drag-1">Fisioterapista</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-2" data-value="Architetto/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-2">Architetto/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-3" data-value="Fioraio/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-3">Fioraio/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-4" data-value="Ballerino/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-4">Ballerino/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-5" data-value="Autista">
+                        <div class="draggable" data-swapy-item="screen-4-drag-5">Autista</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-6" data-value="Influencer">
+                        <div class="draggable" data-swapy-item="screen-4-drag-6">Influencer</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-7" data-value="Astronauta">
+                        <div class="draggable" data-swapy-item="screen-4-drag-7">Astronauta</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-8" data-value="Infermiere/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-8">Infermiere/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-9" data-value="Medico">
+                        <div class="draggable" data-swapy-item="screen-4-drag-9">Medico</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-10" data-value="Poliziotto/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-10">Poliziotto/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-11" data-value="Sarto/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-11">Sarto/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-12" data-value="Pilota">
+                        <div class="draggable" data-swapy-item="screen-4-drag-12">Pilota</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-13" data-value="Cassiere/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-13">Cassiere/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-14" data-value="Chef">
+                        <div class="draggable" data-swapy-item="screen-4-drag-14">Chef</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-15" data-value="Cantante">
+                        <div class="draggable" data-swapy-item="screen-4-drag-15">Cantante</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-16" data-value="Biologo/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-16">Biologo/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-17" data-value="Avvocato/avvocatessa">
+                        <div class="draggable" data-swapy-item="screen-4-drag-17">Avvocato/avvocatessa</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-18" data-value="Artista">
+                        <div class="draggable" data-swapy-item="screen-4-drag-18">Artista</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-19" data-value="Addestratore/addestratrice di cani">
+                        <div class="draggable" data-swapy-item="screen-4-drag-19">Addestratore/addestratrice di cani
+                        </div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-20" data-value="Stilista">
+                        <div class="draggable" data-swapy-item="screen-4-drag-20">Stilista</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-21" data-value="Meccanico/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-21">Meccanico/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-22" data-value="Vigile/vigilessa del fuoco">
+                        <div class="draggable" data-swapy-item="screen-4-drag-22">Vigile/vigilessa del fuoco</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-23" data-value="Insegnante">
+                        <div class="draggable" data-swapy-item="screen-4-drag-23">Insegnante</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-24" data-value="Giornalista">
+                        <div class="draggable" data-swapy-item="screen-4-drag-24">Giornalista</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-25" data-value="Veterinario/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-25">Veterinario/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-26" data-value="Musicista">
+                        <div class="draggable" data-swapy-item="screen-4-drag-26">Musicista</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-27" data-value="Giudice">
+                        <div class="draggable" data-swapy-item="screen-4-drag-27">Giudice</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-28" data-value="Estetista">
+                        <div class="draggable" data-swapy-item="screen-4-drag-28">Estetista</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-29" data-value="Fotografo/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-29">Fotografo/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-30" data-value="Politico/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-30">Politico/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-31" data-value="Ingegnere/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-31">Ingegnere/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-32" data-value="Commesso/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-32">Commesso/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-33" data-value="Scienziato/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-33">Scienziato/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-34" data-value="Elettricista">
+                        <div class="draggable" data-swapy-item="screen-4-drag-34">Elettricista</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-35" data-value="Scrittore/scrittrice">
+                        <div class="draggable" data-swapy-item="screen-4-drag-35">Scrittore/scrittrice</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-36" data-value="Atleta">
+                        <div class="draggable" data-swapy-item="screen-4-drag-36">Atleta</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-37" data-value="Attore/attrice">
+                        <div class="draggable" data-swapy-item="screen-4-drag-37">Attore/attrice</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-38" data-value="Ragioniere/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-38">Ragioniere/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-39" data-value="Giardiniere/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-39">Giardiniere/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-40" data-value="Informatico/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-40">Informatico/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-41" data-value="Psicologo/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-41">Psicologo/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-42" data-value="Negoziante">
+                        <div class="draggable" data-swapy-item="screen-4-drag-42">Negoziante</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-43" data-value="Operaio/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-43">Operaio/a</div>
+                    </div>
+                    <div data-swapy-slot="screen-4-drag-44" data-value="Pizzaiolo/a">
+                        <div class="draggable" data-swapy-item="screen-4-drag-44">Pizzaiolo/a</div>
+                    </div>
+                </div>
+                <button type="button" class="next-button" data-screen="4">Avanti</button>
+            </div>
+
+            <!-- Schermata 5 - Finale/Stampa -->
+            <div id="screen5" class="screen" style="display:none;">
+                <p class="end-message">
+                    Hai creato una nuvola di parole che parla di te! <br>
+                    Con l’aiuto di un adulto, stampala, scrivi la data di oggi e conservala:
+                    tra qualche anno, quando la rivedrai, penserai a quante cose sono cambiate e a quante invece sono
+                    sempre
+                    le stesse.
+                </p>
+                <button type="button" class="next-button" data-screen="5" onclick="printCloud()">Stampa la
+                    nuvola</button>
+                <!-- Restart button -->
+                <button title="Retry button" type="button" style="display: none" class="retry" data-retry>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M17.65 6.35C16.8118 5.50426 15.7944 4.85761 14.6728 4.45779C13.5512 4.05796 12.3542 3.91519 11.17 4.04C7.50002 4.41 4.48002 7.39 4.07002 11.06C3.52002 15.91 7.27002 20 12 20C13.5101 20 14.9892 19.5715 16.2655 18.7643C17.5418 17.9571 18.5628 16.8044 19.21 15.44C19.53 14.77 19.05 14 18.31 14C17.94 14 17.59 14.2 17.43 14.53C16.8494 15.779 15.8564 16.79 14.6179 17.3928C13.3795 17.9956 11.9712 18.1536 10.63 17.84C8.41002 17.35 6.62002 15.54 6.15002 13.32C5.95245 12.4423 5.95474 11.5313 6.15672 10.6546C6.35869 9.77786 6.75519 8.95775 7.31687 8.25492C7.87856 7.55209 8.59107 6.98453 9.40169 6.59421C10.2123 6.2039 11.1003 6.00082 12 6C13.66 6 15.14 6.69 16.22 7.78L14.71 9.29C14.08 9.92 14.52 11 15.41 11H19C19.55 11 20 10.55 20 10V6.41C20 5.52 18.92 5.07 18.29 5.7L17.65 6.35Z"
+                            fill="#fff" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/drag-and-drop.js"></script>
+</body>
+
+</html>
